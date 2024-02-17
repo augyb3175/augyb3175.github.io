@@ -1,9 +1,22 @@
-body {
-    font-family: Arial, sans-serif;
-    color: #ffffff;
-    background-color: #121212;
+/* Keyframes for background color fade animation */
+@keyframes backgroundFade {
+    0% { background-color: #0f0f23; } /* Dark blue */
+    25% { background-color: #2e004e; } /* Dark purple */
+    50% { background-color: #004e4e; } /* Dark teal */
+    75% { background-color: #00004e; } /* Darker blue */
+    100% { background-color: #0f0f23; } /* Back to Dark blue */
 }
 
+/* Existing body styles updated with animation */
+body {
+    font-family: Arial, sans-serif;
+    color: #ffffff; /* Consider adjusting if needed for visibility against new bg */
+    margin: 0;
+    padding: 0;
+    animation: backgroundFade 20s infinite alternate ease-in-out;
+}
+
+/* Existing styles for navigation */
 nav ul {
     list-style: none;
     padding: 0;
@@ -14,19 +27,22 @@ nav ul li {
     margin-right: 20px;
 }
 
+/* Updated link styles for better visibility against the new background */
 a {
-    color: #0dafff;
+    color: #80c8ff; /* Light neon blue for better visibility */
     text-decoration: none;
 }
 
+/* Hero section with potential adjustments for new background */
 #hero {
     text-align: center;
     padding: 100px 20px;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('your-animated-background.gif');
     background-size: cover;
-    color: #0dafff;
+    color: #0dafff; /* Ensure this color is visible against the new bg */
 }
 
+/* Call-to-action button styles, consider adjusting colors for visibility */
 .cta-button {
     background-color: #0dafff;
     color: #121212;
@@ -36,18 +52,21 @@ a {
     cursor: pointer;
 }
 
+/* Projects section */
 #projects {
     padding: 50px 20px;
 }
 
+/* Styles for individual project cards */
 .project-card {
-    background-color: #1a1a1a;
+    background-color: #1a1a1a; /* Ensure visibility against the new bg */
     margin: 20px auto;
     padding: 20px;
     border-radius: 5px;
     max-width: 800px;
 }
 
+/* Footer styles, adjust if necessary for new background */
 footer {
     text-align: center;
     padding: 20px;
