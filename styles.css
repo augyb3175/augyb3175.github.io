@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    background-color: #121212;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    color: #0dafff;
+    text-decoration: none;
+}
+
+#hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('your-animated-background.gif');
+    background-size: cover;
+    color: #0dafff;
+}
+
+.cta-button {
+    background-color: #0dafff;
+    color: #121212;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#projects {
+    padding: 50px 20px;
+}
+
+.project-card {
+    background-color: #1a1a1a;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 800px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
