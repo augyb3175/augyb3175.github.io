@@ -1,6 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
-    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000;
     margin: 0;
     padding: 0;
     background-color: #fff;
@@ -10,50 +10,50 @@ nav ul {
     list-style: none;
     padding: 0;
     text-align: center;
-    background-color: #f2f2f2;
+    background-color: #eaeaea;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #000;
 }
 
 .hero-section {
     text-align: center;
-    padding: 50px 20px;
+    padding: 60px 20px;
 }
 
 .cta-button {
     display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #333;
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: #000;
     color: #fff;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 #projects {
-    padding: 20px;
-    background-color: #f9f9f9;
+    padding: 40px 20px;
+    background-color: #f8f8f8;
 }
 
 .project-card {
     background-color: #fff;
     margin: 20px auto;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    max-width: 600px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    max-width: 500px;
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #f2f2f2;
+    background-color: #eaeaea;
 }
