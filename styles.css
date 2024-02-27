@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+/* Center Picture - Assuming you want to style this specifically */
+.center-picture img {
+    display: block; /* To center the image if needed */
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; /* Example width */
+}
+.image-container {
+    position: relative;
+}
+.overlay-banner  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2); /* Black background with 50% opacity */
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+.line1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+.line2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+/* Navbar */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    padding: 1em 0; /* Added padding for visual spacing */
+    text-align: center; /* Center the nav links */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px; /* Spacing between links */
+    font-size: 1.2em; /* Larger font size for nav links */
+}
+
+/* Footer */
+.footer {
+    background: #3e17a7;
+    color: #08d812;
+    padding: 1em 0;
+    text-align: center;
+    border-top: 10px solid #000; /* Changed to top border for the footer */
+    border-radius: 5px;
+}
