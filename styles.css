@@ -1,58 +1,57 @@
+@import url(https://fonts.google.com/specimen/Roboto);
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
     padding: 0;
-    background-color: #f4f4f4;
+    margin: 0;
 }
-/* Center Picture - Assuming you want to style this specifically */
-.center-picture img {
-    display: block; /* To center the image if needed */
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%; /* Example width */
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
 }
-.image-container {
-    position: relative;
+
+.banner {
+    position: relative; /* Ensure the banner is positioned relatively for absolute positioning of the arrow */
+    /* Your existing styles for the banner */
 }
-.overlay-banner  {
+
+.scroll-arrow {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.2); /* Black background with 50% opacity */
-    color: white;
-    padding: 25px;
-    text-align: center;
-}
-.line1 {
-    font-size: 2em;
-    margin-bottom: 0.5em;
-}
-.line2 {
-    font-size: 1.5em;
-    margin-bottom: 0.5em;
-}
-/* Navbar */
-.navbar {
-    background-color: #333;
-    overflow: hidden;
-    padding: 1em 0; /* Added padding for visual spacing */
-    text-align: center; /* Center the nav links */
+    bottom: 20px; /* Adjust as needed to position the arrow from the bottom of the section */
+    left: 50%;
+    transform: translateX(-50%); /* Center the arrow horizontally */
+    font-size: 2rem; /* Adjust the size of the arrow */
+    animation: bounce 2s infinite; /* Add a bouncing animation to attract attention */
+    cursor: pointer; /* Change cursor to pointer to indicate it's interactive */
 }
 
-.navbar a {
-    color: white;
-    text-decoration: none;
-    padding: 0 15px; /* Spacing between links */
-    font-size: 1.2em; /* Larger font size for nav links */
+/* Add a simple bounce animation */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    40% {
+        transform: translateX(-50%) translateY(-20px);
+    }
+    60% {
+        transform: translateX(-50%) translateY(-10px);
+    }
 }
 
-/* Footer */
-.footer {
-    background: #3e17a7;
-    color: #08d812;
-    padding: 1em 0;
-    text-align: center;
-    border-top: 10px solid #000; /* Changed to top border for the footer */
-    border-radius: 5px;
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-1000px);
+    transition: all 3s;
 }
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
