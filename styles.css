@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Source+Code+Pro:wght@400;600&display=swap');
+
 body {
     background-color: #000000;
     color: #ffffff;
@@ -7,29 +8,53 @@ body {
     margin: 0;
 }
 
+/* Base section styles */
 section {
     display: grid;
     place-items: center;
     align-content: center;
     min-height: 100vh;
+    padding: 0 20px;
 }
 
+/* Content container for better spacing */
+.content-container {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+/* Banner/Hero section */
 .banner {
-    position: relative; /* Ensure the banner is positioned relatively for absolute positioning of the arrow */
-    /* Your existing styles for the banner */
+    position: relative;
 }
 
+.banner h1 {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+}
+
+.banner p {
+    font-size: 1.5rem;
+    color: #8892b0;
+    margin-bottom: 2rem;
+}
+
+/* Scroll arrow */
 .scroll-arrow {
     position: absolute;
-    bottom: 20px; /* Adjust as needed to position the arrow from the bottom of the section */
+    bottom: 20px;
     left: 50%;
-    transform: translateX(-50%); /* Center the arrow horizontally */
-    font-size: 2rem; /* Adjust the size of the arrow */
-    animation: bounce 2s infinite; /* Add a bouncing animation to attract attention */
-    cursor: pointer; /* Change cursor to pointer to indicate it's interactive */
+    transform: translateX(-50%);
+    font-size: 2rem;
+    animation: bounce 2s infinite;
+    cursor: pointer;
 }
 
-/* Add a simple bounce animation */
+/* Bounce animation */
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
         transform: translateX(-50%) translateY(0);
@@ -42,16 +67,67 @@ section {
     }
 }
 
+/* Hidden sections for scroll animation */
 .hidden {
-  opacity: 0;
-  filter: blur(5px);
-  transform: translateX(-1000px);
-  transition: all 3s;
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100px);
+    transition: all 1.5s;
 }
 
 .show {
-  opacity: 1;
-  filter: blur(0);
-  transform: translateX(0);
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+/* Typewriter effect styling */
+.typewriter-text::after,
+.typewriter-trigger::after {
+    content: '|';
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    from, to { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Content styling */
+.content-container h1,
+.content-container h2 {
+    font-size: 2.5rem;
+    color: #64ffda;
+    margin: 10px 0;
+}
+
+.content-container p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #8892b0;
+    max-width: 800px;
+}
+
+.content-container img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    margin: 20px 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 2.5rem;
+    }
+    
+    .banner p {
+        font-size: 1.2rem;
+    }
+    
+    .content-container h1,
+    .content-container h2 {
+        font-size: 2rem;
+    }
 }
 
