@@ -1,4 +1,4 @@
-@import url(https://fonts.google.com/specimen/Roboto);
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body {
     background-color: #000000;
     color: #ffffff;
@@ -43,15 +43,15 @@ section {
 }
 
 .hidden {
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateX(-1000px);
-    transition: all 3s;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-1000px);
+  transition: all 3s;
 }
 
 .show {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }
 

@@ -3,29 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Zachary Augustin - Cybersecurity</title>
 
     <link rel="stylesheet" href="styles.css">
+    <!-- Add GSAP for better animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script defer src="app.js"></script>
 </head>
-<section class="banner">
-    <h1>Zachary Augustin</h1>
-    <p>A short walk in my cyber security journey</p>
-    <div class="scroll-arrow">&#x2193;</div> <!-- Downward arrow using HTML entity -->
-</section>
 <body>
-    <section class="hidden">
-    <img src="Images\Home.webp" alt="Home">
-    <h1>On Guard in a Digital World</h1>
+    <!-- Hero Banner with Typewriter Effect -->
+    <section class="banner">
+        <h1 class="typewriter-text" id="hero-title">Zachary Augustin</h1>
+        <p class="typewriter-text" id="hero-subtitle">A short walk in my cyber security journey</p>
+        <div class="scroll-arrow">&#x2193;</div>
     </section>
 
+    <!-- Your existing sections with added content -->
     <section class="hidden">
-    <h2>What is Cybersecurity?</h2>
+        <div class="content-container">
+            <img src="Images/Home.webp" alt="Home">
+            <h1 class="typewriter-trigger">On Guard in a Digital World</h1>
+            <p>Exploring the frontlines of digital defense and the evolving landscape of cybersecurity threats.</p>
+        </div>
     </section>
-
+    
     <section class="hidden">
-    <h2>Why is Cybersecurity Important?</h2>
+        <div class="content-container">
+            <h2 class="typewriter-trigger">What is Cybersecurity?</h2>
+            <p>Cybersecurity is the practice of protecting systems, networks, and programs from digital attacks. These attacks typically aim to access, change, or destroy sensitive information, extort money from users, or interrupt normal business processes.</p>
+            <p>As our reliance on technology grows, so does the importance of implementing effective cybersecurity measures.</p>
+            <img src="Images/cybersecurity-concept.jpg" alt="Cybersecurity Concept">
+        </div>
     </section>
-
+    
+    <section class="hidden">
+        <div class="content-container">
+            <h2 class="typewriter-trigger">Why is Cybersecurity Important?</h2>
+            <p>In today's connected world, everyone benefits from advanced cybersecurity programs. At an individual level, a cybersecurity attack can result in everything from identity theft to extortion attempts.</p>
+            <p>On a larger scale, organizations face risks to their financial well-being, reputation, and customer trust. National security can even be threatened when critical infrastructure is targeted.</p>
+            <img src="Images/security-importance.jpg" alt="Importance of Security">
+        </div>
+    </section>
 </body>
 </html>
